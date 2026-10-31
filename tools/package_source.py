@@ -6,10 +6,11 @@ root = Path(__file__).resolve().parent.parent
 paths = [root / name for name in (
     'main.py', 'LICENSE', '.gitignore', 'README.md', 'THIRD_PARTY.md', 'PRIVACY.md',
     'requirements-build.txt', 'build.ps1', 'install.ps1', 'uninstall.ps1')]
-for folder in ('app', 'tests', 'tools', '.github', 'assets'):
+paths.extend(root.glob('README.*.md'))
+for folder in ('app', 'tests', 'tools', '.github', 'assets', 'docs'):
     paths.extend(path for path in (root / folder).rglob('*')
                  if path.is_file() and '__pycache__' not in path.parts
-                 and path.suffix in ('.py', '.yml', '.ico', '.svg', '.txt'))
+                 and path.suffix in ('.py', '.yml', '.ico', '.svg', '.txt', '.md'))
 destination = root / 'release/RiotProfiles-Source.zip'
 destination.parent.mkdir(exist_ok=True)
 with zipfile.ZipFile(destination, 'w', zipfile.ZIP_DEFLATED) as archive:

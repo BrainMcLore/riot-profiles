@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<title id="title">Riot Profiles</title><desc id="desc">Independent Android profiles. Windows. Four languages. Open source.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#121318"/><stop offset="1" stop-color="#23161e"/></linearGradient></defs>
+<rect width="1200" height="320" rx="20" fill="url(#bg)"/>
+<path d="M830 0h370v320H550z" fill="#762334"/><path d="M1020 0h180v320H760z" fill="#d93643"/>
+<rect x="48" y="43" width="6" height="24" rx="3" fill="#ed5964"/>
+<text x="69" y="61" fill="#b9bac2" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="3">WINDOWS · ANDROID · OPEN SOURCE</text>
+<text x="46" y="155" fill="#f7f5f1" font-family="Segoe UI,Arial,sans-serif" font-size="70" font-weight="700" letter-spacing="-2">Riot Profiles</text>
+<path d="M49 187h425" stroke="#4a303b" stroke-width="2"/>
+<text x="49" y="230" fill="#d0cbd1" font-family="Segoe UI,Arial,sans-serif" font-size="21" letter-spacing="3">RU / EN / UK / PT-PT</text>
+<text x="49" y="276" fill="#97939e" font-family="Segoe UI,Arial,sans-serif" font-size="14" letter-spacing="2">PROFILES · QUICK BOOT · MIT</text>
+<g transform="translate(960 42) rotate(8 66 118)"><rect width="132" height="236" rx="25" fill="#15171c" stroke="#f4c6cc" stroke-width="5"/>
+<rect x="11" y="30" width="110" height="174" rx="9" fill="#e14453"/><path d="M48 15h36M52 220h28" stroke="#e7d5da" stroke-width="5" stroke-linecap="round"/>
+<text x="66" y="132" fill="#fff" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="45" font-weight="700">RP</text></g>
+</svg>

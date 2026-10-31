@@ -1,92 +1,132 @@
-# Riot Profiles
+<p align="center"><img src="docs/assets/header.svg" alt="Riot Profiles" width="100%" /></p>
 
-[Скачать EXE-установщик](https://github.com/BrainMcLore/riot-profiles/releases/latest/download/RiotProfiles-Setup.exe)
-· [Все файлы релиза](https://github.com/BrainMcLore/riot-profiles/releases/latest)
+<p align="center"><strong>Independent Android profiles. One Windows launcher.</strong><br />No Android Studio. Your apps, accounts and saved data stay separate.</p>
 
-Неофициальный open-source лаунчер отдельных Android-профилей для Windows.
-Тёмный интерфейс с красными акцентами, выбор профиля и запуск Android без Android Studio.
-Языки интерфейса: русский, English, українська и português de Portugal (pt-PT).
-Лицензия исходников: MIT.
+<p align="center">
+  <a href="https://github.com/BrainMcLore/riot-profiles/releases/latest"><img src="https://img.shields.io/github/v/release/BrainMcLore/riot-profiles?style=flat-square&amp;color=d93643" alt="Latest release" /></a>
+  <a href="https://github.com/BrainMcLore/riot-profiles/actions/workflows/release.yml"><img src="https://github.com/BrainMcLore/riot-profiles/actions/workflows/release.yml/badge.svg?branch=v0.2.0" alt="Build and release" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-8292a2?style=flat-square" alt="MIT" /></a>
+  <img src="https://img.shields.io/badge/Windows-10%20%2F%2011%20x64-405a88?style=flat-square" alt="Windows 10 / 11 x64" />
+</p>
 
-## Выбор языка
+**🇬🇧 English** · [🇷🇺 Русский](README.ru.md) · [🇺🇦 Українська](README.uk.md) · [🇵🇹 Português (Portugal)](README.pt-PT.md)
 
-При открытии лаунчера или установщика сначала появляется выбор языка. Выбранный
-язык запоминается. Можно снять отметку показа выбора при запуске; изменить язык
-позже можно кнопкой языка в правом верхнем углу лаунчера. Названия профилей,
-аккаунты и данные Android при смене языка не меняются. Это перевод лаунчера и
-его установочных сообщений; язык Android, Riot Mobile и оригинальных лицензий
-Google задаётся отдельно.
+<p align="center">
+  <a href="https://github.com/BrainMcLore/riot-profiles/releases/latest/download/RiotProfiles-Setup.exe"><img src="docs/assets/download-en.svg" alt="Download for Windows" width="300" /></a>
+  <a href="https://github.com/BrainMcLore/riot-profiles/releases/latest/download/install.ps1"><img src="docs/assets/powershell-en.svg" alt="PowerShell" width="204" /></a>
+  <a href="https://github.com/BrainMcLore/riot-profiles/archive/refs/heads/main.zip"><img src="docs/assets/source-en.svg" alt="Source code" width="224" /></a>
+</p>
 
-## Возможности
+---
+[🚀 Install](#installation) · [✨ Features](#features) · [🌍 Languages](#languages) · [🛡️ Privacy](#privacy) · [🛠️ Build](#development)
 
-- Самостоятельное создание любого количества профилей, без лимита в приложении.
-- Отдельные аккаунты, приложения, ключи устройства, сохранения и Quick Boot у каждого профиля.
-- Общий образ Android экономит место. Каждый профиль использует собственные файлы данных.
-- Переключение выбором профиля и кнопкой «Запустить». Уже открытый профиль выводится вперёд.
-- Можно держать несколько профилей открытыми. Их количество ограничено ресурсами ПК
-  и доступными портами Android Emulator; число сохранённых профилей не ограничено.
-- Переименование, удаление с подтверждением, холодный запуск и прямые ярлыки профилей.
-- Кнопка Riot Mobile открывает приложение либо его страницу Google Play.
-- Старые эмуляторы и их данные не затрагиваются. Импорт чужих устройств не выполняется.
+<a id="features"></a>
+## ✨ Your profiles, your space
 
-## Требования
+| | What you get |
+| :--- | :--- |
+| 👥 **Multiple profiles** | Create as many saved profiles as your storage allows. No fixed application limit. |
+| 🔐 **Separate Android data** | Each profile has its own accounts, apps, device keys, saved data and Quick Boot state. |
+| 🎮 **Choose and launch** | Select a profile in the dark launcher, launch it, or bring an open profile to the front. |
+| ⚡ **Quick Boot** | Resume saved state, or use a cold boot without wiping profile data. |
+| 🖥️ **Desktop shortcuts** | Open the launcher to choose a profile, or create a shortcut directly to one profile. |
+| 📦 **Shared system image** | Android tools and the read-only base image are shared; profile data is independent. |
+| 🌍 **Four UI languages** | English, Russian, Ukrainian and Portuguese from Portugal. |
 
-Windows 10/11 x64, процессор Intel/AMD с виртуализацией, 8 ГБ RAM минимум
-(16 ГБ удобнее для нескольких экземпляров), от 15 ГБ свободного места для установки.
-Каждый активный Android использует около 3 ГБ RAM; данные профилей занимают дополнительное место.
-Нужен установленный **Windows Hypervisor Platform**. Установщик не меняет параметры
-виртуализации, безопасности и BIOS. Если аппаратное ускорение недоступно, смотри
-[официальную инструкцию](https://developer.android.com/studio/run/emulator-acceleration).
+You can keep multiple devices open at once. The practical limit depends on RAM,
+CPU and available emulator ports. Existing emulators are not imported or modified.
 
-## Установка EXE
+<a id="installation"></a>
+## 🚀 Get started
 
-1. Скачай `RiotProfiles-Setup.exe` из Releases и запусти его.
-2. Прочитай лицензии компонентов Google и прими их для скачивания Android (~2 ГБ).
-3. После установки нажми «Добавить профиль», задай название и нажми «Запустить».
-4. В Android открой Google Play, войди в Google и установи Riot Mobile от Riot Games.
-5. Войди в Riot внутри официального приложения. Для каждого нового профиля вход отдельный.
+### 🪟 Windows installer
 
-Права администратора, Python и Android Studio для готовой EXE-сборки не нужны.
-Главный ярлык `Riot Profiles` открывает выбор профиля; прямой ярлык профиля открывает
-только его Android. Первый запуск дольше, последующие используют Quick Boot.
+1. Download **[RiotProfiles-Setup.exe](https://github.com/BrainMcLore/riot-profiles/releases/latest/download/RiotProfiles-Setup.exe)** and run it.
+2. Choose a language, read the Google component licences and accept them to install Android (~2 GB download).
+3. Click **Add profile**, give it a name, then click **Launch**.
+4. Inside Android, sign in to Google Play and install **Riot Mobile by Riot Games**.
+5. Sign in to your Riot account inside the official app. Each new profile needs its own sign-in.
 
-## Установка через PowerShell
+The ready-made EXE does not require Python, Android Studio or administrator rights.
+The first boot takes longer; later launches use Quick Boot. Close the Android window
+normally and wait for its state to be saved.
 
-Скачай `install.ps1` из релиза, прочитай его и выполни:
+### 💻 PowerShell
+
+Download **[install.ps1](https://github.com/BrainMcLore/riot-profiles/releases/latest/download/install.ps1)**, inspect it, then run:
 
 ```powershell
 .\install.ps1
 ```
 
-По умолчанию используется `BrainMcLore/riot-profiles`; для форка укажи
-`-Repository OWNER/REPO`. Скрипт загрузит EXE-установщик и SHA256SUMS из Releases, проверит SHA-256 и откроет
-установщик. Он не использует `Invoke-Expression` и не меняет ExecutionPolicy.
-Если политика компьютера запрещает скрипты, используй EXE-установщик.
-Для уже скачанного релиза с SHA256SUMS рядом:
+The script downloads the EXE from this repository, checks it against `SHA256SUMS` and
+opens setup. It does not use `Invoke-Expression` or change your execution policy.
+If scripts are blocked on your PC, use the EXE installer instead.
+
+<details>
+<summary>⚙️ Offline files, forks and unattended installation</summary>
+
+With the installer and `SHA256SUMS` already downloaded into the same folder:
 
 ```powershell
 .\install.ps1 -SetupPath .\RiotProfiles-Setup.exe
 ```
 
-Для явно согласованной установки без окон лицензий, **после прочтения лицензий Google**:
+For a fork, pass `-Repository OWNER/REPO`. For unattended installation, **read the
+Google licences first**, then explicitly accept them:
 
 ```powershell
 .\install.ps1 -AcceptGoogleLicenses
 ```
 
-Это не обходит вход Google/Riot. Аккаунты добавляются пользователем внутри Android.
+This does not automate Google or Riot sign-in. Accounts are added inside Android.
 
-## Данные и удаление
+</details>
 
-Программа: `%LOCALAPPDATA%\Programs\RiotProfiles`.
-SDK и профили: `%LOCALAPPDATA%\RiotProfiles`.
-Для удаления только программы запусти `uninstall.ps1`; данные Android сохранятся.
-Удаление профиля в интерфейсе удаляет его аккаунты и приложения после подтверждения.
-Не загружай папку данных в GitHub. См. [PRIVACY.md](PRIVACY.md).
+### 🧰 System requirements
 
-## Разработка и сборка
+| Component | Requirement |
+| :--- | :--- |
+| OS | Windows 10 / 11 **x64**, Intel or AMD processor |
+| Virtualisation | Hardware virtualisation and **Windows Hypervisor Platform** |
+| RAM | **8 GB minimum**, 16 GB recommended for multiple devices |
+| Disk | **15 GB free** for installation and the first profile; extra space for more profiles |
+| Per active device | Approximately **3 GB RAM** |
 
-Python 3.10+ на Windows. Runtime использует только стандартную библиотеку.
+The installer does not change BIOS, virtualisation or Windows security settings.
+See Google's [hardware acceleration guide](https://developer.android.com/studio/run/emulator-acceleration) if required.
+
+<a id="languages"></a>
+## 🌍 Choose your language
+
+**🇬🇧 English · 🇷🇺 Русский · 🇺🇦 Українська · 🇵🇹 Português (Portugal)**
+
+A language picker appears when setup or the launcher opens. Your choice is saved.
+You can turn off the startup picker and change the language later using the button
+in the launcher's top-right corner. Profile names and Android data are unchanged.
+The launcher language does not change Android, Riot Mobile or Google's original licence texts.
+
+<a id="privacy"></a>
+## 🛡️ Your data stays on your PC
+
+- The project does not bundle accounts, passwords, ADB keys or existing Android devices.
+- The launcher does not request your Google or Riot credentials and sends no analytics.
+- Each profile has its own writable Android storage. The base system image is shared read-only.
+- Removing a profile permanently removes its apps and accounts **after confirmation**.
+- [`uninstall.ps1`](uninstall.ps1) removes the launcher and its shortcuts while preserving Android data.
+
+| Location | Contents |
+| :--- | :--- |
+| `%LOCALAPPDATA%\Programs\RiotProfiles` | Installed launcher and icon |
+| `%LOCALAPPDATA%\RiotProfiles` | Shared SDK, local profiles and preferences |
+
+Never publish runtime folders or device logs. Profile separation is not protection
+against a local administrator or malware. Read [Privacy](PRIVACY.md).
+
+<a id="development"></a>
+## 🛠️ Build it yourself
+
+Python **3.10+** on Windows. The application uses Python's standard library at runtime.
 
 ```powershell
 python main.py
@@ -94,37 +134,22 @@ python -m pip install -r requirements-build.txt
 .\build.ps1
 ```
 
-`build.ps1` запускает тесты, собирает launcher/installer EXE, проверяет встроенные
-ресурсы и создаёт `release/` с бинарниками, PowerShell-установщиком, чистым исходным
-ZIP и SHA256SUMS. Проверка упаковки блокирует попадание runtime-файлов и абсолютных
-путей домашнего каталога разработчика. `RiotProfiles-Setup.exe` и `RiotProfiles.exe` содержат один и тот же
-открытый код: имя Setup включает режим установки. SDK скачивается отдельно.
-Не запускай сборку из каталога с данными Android.
+The build runs tests, checks the bundled EXE, audits the release for runtime data and
+developer home paths, and creates installers, source ZIP and `SHA256SUMS` in `release/`.
+Android tools and system images are downloaded from Google during installation, not
+redistributed in the EXE. Setup and launcher use the same open-source code.
 
-## Публикация на GitHub
+GitHub Actions checks pull requests and builds a release when a `v*` tag is pushed.
+For a new application version, update both version constants in `app/core.py` and
+`app/__init__.py`, then push a matching version tag. Keep `data/`, `sdk/`, `build/`,
+`dist/` and `release/` out of Git.
 
-Создай пустой репозиторий и загрузи **содержимое этого каталога**, а не его родительскую
-папку со старыми личными скриптами. Не включай `release/`, `build/` и `dist/` в Git.
-Workflow `.github/workflows/release.yml` проверяет pull requests и собирает релиз при
-push тега `v0.2.0`. Включи GitHub Actions. EXE и исходный ZIP появятся в GitHub Releases.
-Для новой версии измени VERSION в `app/core.py` и `app/__init__.py`, затем создай новый тег.
+## 📜 Licence & project status
 
-```powershell
-git init
-git add .
-git commit -m "Initial public release"
-git branch -M main
-git remote add origin https://github.com/OWNER/REPO.git
-git push -u origin main
-git tag v0.2.0
-git push origin v0.2.0
-```
+**[MIT](LICENSE)** for the launcher source and project-created icon. Third-party
+components keep their own licences: [Third-party notices](THIRD_PARTY.md).
 
-## Ограничения
-
-Это не официальный Riot Client. Riot Mobile, вход, MFA, QR и уведомления в эмуляторе
-могут работать иначе, чем на телефоне. Не обещается ускорение относительно других
-эмуляторов. Для совместимости используется software graphics без Vulkan; холодный
-запуск пропускает snapshot, но не стирает данные. Профили изолируют Android-данные,
-но не защищают от локального администратора. Бинарники пока без цифровой подписи.
-См. [THIRD_PARTY.md](THIRD_PARTY.md) для лицензий и товарных знаков.
+This is an **unofficial community project**, not affiliated with Riot Games or Google.
+Riot Mobile sign-in, MFA, QR codes and notifications may behave differently in an emulator.
+Compatibility and faster startup than other emulators are not guaranteed. Software graphics
+without Vulkan are used for compatibility. Release binaries are currently unsigned.
